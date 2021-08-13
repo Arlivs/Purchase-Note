@@ -37,14 +37,16 @@ body{
     text-align: center;
     margin-top: 200px;
 }
-.reg__title {
-    font-weight: bold;
-    margin-bottom: 100px;
-    font-size: 50px;
-}
-.reg__data {
-    position: relative;
-    text-align: center;
+.reg{
+    &__data {
+        position: relative;
+        text-align: center;
+    }
+    &__title {
+        font-weight: bold;
+        margin-bottom: 100px;
+        font-size: 50px;
+    }
 }
 .login-label{
     margin-right: 40px;
@@ -53,6 +55,14 @@ body{
     text-decoration: none;
     position: relative;
     color: rgb(132, 180, 189);
+    &-p{
+        color: rgb(185, 185, 185);
+        padding: 10px 0;
+        transition: .2s;
+        &:hover{
+            color:#fff
+        }
+    }
     &:after{
         content:"";
         position: absolute;
@@ -70,14 +80,6 @@ body{
         visibility: visible;
         bottom: 0;
         width: 100%;
-    }
-}
-.logined-p{
-    color: rgb(185, 185, 185);
-    padding: 10px 0;
-    transition: .2s;
-    &:hover{
-        color:#fff
     }
 }
 .reg-submit {
