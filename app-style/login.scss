@@ -7,27 +7,35 @@
 }
 $orng: rgb(214, 136, 34);
 $preWhite: rgb(235, 235, 235);
-*:focus{
-    outline: 0;
+*:focus{outline: 0;}
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 body{
-    background-color: rgb(54, 43, 75);
+    background-color:$preWhite;
     color: #fff;
     display: flex;
     height: 100vh;
+    overflow: hidden;
     justify-content: center;
 }
 .data-box{
-    margin: 20px;
-    text-align: right;
+    margin: 30px 0;
+    text-align: center;
 }
 .label{
     margin-right: 10px;
+    color: rgb(29, 28, 28);
     font-weight: bold;
 }
 .input{
     padding: 8px 15px;
     border-radius: 5px;
+    color: $orng;
+    font-weight: bold;
+    border: 1px rgb(121, 121, 121) solid;
     &:focus{
         box-shadow: 0px 0px 10px rgb(136, 135, 135);
     }
@@ -35,51 +43,58 @@ body{
 .container{
     max-width: 400px;
     text-align: center;
-    margin-top: 200px;
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .reg{
     &__data {
         position: relative;
         text-align: center;
+        
     }
     &__title {
         font-weight: bold;
-        margin-bottom: 100px;
+        color:#1e272e;
+        margin-bottom: 50px;
         font-size: 50px;
     }
 }
-.login-label{
-    margin-right: 40px;
-}
-.logined {
-    text-decoration: none;
-    position: relative;
-    color: rgb(132, 180, 189);
-    &-p{
-        color: rgb(185, 185, 185);
-        padding: 10px 0;
-        transition: .2s;
-        &:hover{
-            color:#fff
+.login{
+    &-label{
+        margin-right: 42px;
+    }
+    &ed {
+        text-decoration: none;
+        position: relative;
+        color: $orng;
+        &-p{
+            color: rgb(185, 185, 185);
+            padding: 30px 0;
+            transition: .3s;
+            &:hover{
+                color:rgb(29, 28, 28)
+            }
         }
-    }
-    &:after{
-        content:"";
-        position: absolute;
-        left: 0;
-        bottom: -20px;
-        width: 0;
-        transition: .3s;
-        opacity: 0;
-        visibility: hidden;
-        height: 2px;
-        background-color: rgb(132, 180, 189);
-    }
-    &:hover:after{
-        opacity: 1;
-        visibility: visible;
-        bottom: 0;
-        width: 100%;
+        &:after{
+            content:"";
+            position: absolute;
+            left: 0;
+            bottom: -20px;
+            width: 0;
+            transition: .3s;
+            opacity: 0;
+            visibility: hidden;
+            height: 2px;
+            background-color: $orng;
+        }
+        &:hover:after{
+            opacity: 1;
+            visibility: visible;
+            bottom: 0;
+            width: 100%;
+        }
     }
 }
 .reg-submit {
@@ -87,9 +102,9 @@ body{
     border-radius: 15px;
     transition: .3s;
     margin: 5px 0 30px;
-    font-weight: bold;
+    border: 1px rgb(29, 28, 28) solid;
     text-transform: uppercase;
-    color: rgb(56, 73, 124);
+    color: $orng;
     font-size: 12px;
     letter-spacing: 1px;
     &:hover{
@@ -98,16 +113,40 @@ body{
     }
 }
 .back > a{
-    position: absolute;
-    top: 10px;
-    left: 10px;
+    display: inline-block;
     text-decoration: none;
     color: #fff;
     padding: 5px 15px;
+    margin-right: 50px;
     border-radius: 15px;
     transition: .3s;
     border: solid 1px $orng;
     &:hover{
         background-color: $orng;
+    }
+}
+.figure{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    left: 5%;
+    top: 50%;
+    transform: perspective(800px)
+    rotateX(40deg) rotateY(20deg);
+    background-color: $orng;
+    border-radius: 30px;
+    overflow: hidden;
+    z-index: -111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-word{
+        color: #000;
+        left: 10%;
+        top: 70%;
+        font-size: 11px;
+        color: $preWhite;
+        font-weight: bold;
+        position: absolute;
     }
 }
