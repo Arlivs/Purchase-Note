@@ -24,16 +24,17 @@ button{
     justify-content: center;
     display: flex;
     align-items: center;
-    &-logo{
+    &-logo > a{
         color: $preWhite;
         font-weight: bold;
         letter-spacing: 3px;
+        text-decoration: none;
         margin-left: 30px;
         text-shadow: $orng 4px -1px 6px ;
-        &_note{
-            color: $orng;
-            text-shadow: $orng 4px -1px 6px ;
-        }
+    }
+    &-logo_note{
+        color: $orng;
+        text-shadow: $orng 4px -1px 6px ;
     }
     &-nav{
         display: flex;
@@ -59,7 +60,7 @@ button{
     .registr a{
         display: inline-block;
         border-radius: 15px;
-        margin-right: 50px;
+        margin-right: 30px;
         transition: .3s;
         border: solid 1px $orng;
         padding: 8px 10px;
@@ -97,23 +98,5 @@ button{
                 box-shadow: 0px 0px 10px#fff;
             }
         }
-    }
-    .reg-box{
-        position: absolute;
-        right: 30px;
-        top: 50%;
-        transform: translateY(-50%);
-        border-radius: 15px;
-        transition: .3s;
-        border: solid 1px rgb(214, 136, 34);
-        &:hover{
-            background-color: rgb(214, 136, 34);
-        }
-    }
-    .reg-btn{
-        color: #fff;
-        padding: 10px;
-        font-weight: bold;
-        font-size: 16px;
     }
 }
