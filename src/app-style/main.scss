@@ -11,7 +11,7 @@ $orng: rgb(214, 136, 34);
 $preWhite: rgb(235, 235, 235);
 .container{
     width: 1400px;
-    margin: 0 auto;
+    margin: 100px auto 0;
 }
 button{
     cursor: pointer;
@@ -19,6 +19,7 @@ button{
 .header{
     width: 100%;
     position: fixed;
+    z-index: 10;
     background: rgb(29, 28, 28);
     min-height: 60px;
     justify-content: center;

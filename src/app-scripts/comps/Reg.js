@@ -1,10 +1,10 @@
-import "../css/login.css"
+import "../../app-style/login.css"
 import RegData from "./RegData"
 
 function Register() {
     return(
         <>
-        <section className="container">
+        <section className="container _login">
             <div className="figure-word">We help to save your money</div>
             <div className="figure"></div>
             <div className="reg__title">Register</div>
