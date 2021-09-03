@@ -21,8 +21,7 @@ button {
 .header {
   width: 100%;
   position: fixed;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(95%, #1d1c1c), to(#fff));
-  background: linear-gradient(to bottom, #1d1c1c 95%, #fff);
+  background: #1d1c1c;
   min-height: 60px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -33,19 +32,13 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
-  background: linear-gradient(to bottom, #1d1c1c 95%, #fff);
-  min-height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .header-logo > a {
   color: #ebebeb;
   font-weight: bold;
   letter-spacing: 3px;
   text-decoration: none;
-  margin-left: 30px;
+  margin-left: 50px;
   text-shadow: #d68822 4px -1px 6px;
 }
 .header-logo_note {
@@ -60,7 +53,7 @@ button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
   -webkit-box-flex: 1;
       -ms-flex: 1 1;
@@ -83,7 +76,7 @@ button {
 .header .registr a {
   display: inline-block;
   border-radius: 15px;
-  margin-right: 30px;
+  margin-right: 50px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   border: solid 1px #d68822;
@@ -93,34 +86,4 @@ button {
 }
 .header .registr a:hover {
   background-color: #d68822;
-}
-.header-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  max-width: 800px;
-  margin: 0 auto;
-}
-.header-item {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-}
-.header-item._account {
-  border-radius: 50%;
-  background-color: #fff;
-  width: 40px;
-  -webkit-box-shadow: 0px 0px 100px #fff;
-          box-shadow: 0px 0px 100px #fff;
-  height: 40px;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  font-size: 0;
-}
-.header-item._account:hover {
-  -webkit-box-shadow: 0px 0px 10px #fff;
-          box-shadow: 0px 0px 10px #fff;
 }

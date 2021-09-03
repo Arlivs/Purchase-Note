@@ -19,7 +19,7 @@ button{
 .header{
     width: 100%;
     position: fixed;
-    background: linear-gradient(to bottom, rgb(29, 28, 28) 95%, #fff );
+    background: rgb(29, 28, 28);
     min-height: 60px;
     justify-content: center;
     display: flex;
@@ -68,35 +68,6 @@ button{
         color: #fff;
         &:hover{
             background-color: $orng;
-        }
-    }
-    position: relative;
-    background: linear-gradient(to bottom, rgb(29, 28, 28) 95%, #fff );
-    min-height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &-nav{
-        display: flex;
-        justify-content: space-between;
-        max-width: 800px;
-        margin: 0 auto;
-    }
-    &-item {
-        text-decoration: none;
-        color: #fff;
-        font-weight: bold;
-        &._account{
-            border-radius: 50%;
-            background-color: #fff;
-            width: 40px;
-            box-shadow: 0px 0px 100px#fff;
-            height: 40px;
-            transition: .4s;
-            font-size: 0;
-            &:hover{
-                box-shadow: 0px 0px 10px#fff;
-            }
         }
     }
 }
