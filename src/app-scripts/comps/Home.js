@@ -1,16 +1,14 @@
 function Home() {
     return(
     <>
-        <div className="banner">
+        <main className="banner">
             <div className="container">
-                <div className="banner-header">
-                    Its a Main Page of this application
-                </div>
+                <p className="banner-title"></p>
                 <div className="banner-content">
-                    SOme content
+                    <p>Some content</p>
                 </div>
             </div>
-        </div>
+        </main>
     </>
     )
 }
