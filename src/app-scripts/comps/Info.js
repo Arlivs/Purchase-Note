@@ -1,8 +1,5 @@
 import "../../app-style/info.css"
-
-function Info() {
-    return(
-    <>
+export const Info = () =>(<>
     <section className="info">
         <div className="container">
             <div className="info-header">
@@ -13,6 +10,4 @@ function Info() {
         </div>
     </section>
     </>
-    )
-}
-export default Info;
+)

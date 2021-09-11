@@ -1,9 +1,6 @@
 import "../../app-style/login.css"
-import RegData from "./RegData"
-
-function Register() {
-    return(
-        <>
+import {RegData} from "./RegData"
+export const Register = () =>(<>
         <section className="container _login">
             <div className="figure-word">We help to save your money</div>
             <div className="figure"></div>
@@ -11,6 +8,5 @@ function Register() {
             <RegData/>
             <p className="logined-p">You already registrated before? touch here</p>
         </section>
-        </>
-    )
-}export default Register
+    </>
+)

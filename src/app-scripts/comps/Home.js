@@ -1,15 +1,11 @@
-function Home() {
-    return(
-    <>
-        <main className="banner">
-            <div className="container">
-                <p className="banner-title"></p>
-                <div className="banner-content">
-                    <p>Some content</p>
-                </div>
+export const Home = () => (<>
+    <main className="banner">
+        <div className="container">
+            <p className="banner-title"></p>
+            <div className="banner-content">
+                <p>Some content</p>
             </div>
-        </main>
+        </div>
+    </main>
     </>
-    )
-}
-export default Home
+)
