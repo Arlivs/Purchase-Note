@@ -1,5 +1,5 @@
 import "../../app-style/login.css"
-import {RegData} from "./RegData"
+import {RegData} from "../comps/RegData"
 export const Register = () =>(<>
         <section className="container _login">
             <div className="figure-word">We help to save your money</div>

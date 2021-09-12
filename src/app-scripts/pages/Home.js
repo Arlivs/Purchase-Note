@@ -1,5 +1,5 @@
 export const Home = () => (<>
-    <main className="banner">
+    <main className="banner _content">
         <div className="container">
             <p className="banner-title"></p>
             <div className="banner-content">

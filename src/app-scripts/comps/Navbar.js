@@ -1,9 +1,9 @@
 import { BrowserRouter, Link, Route } from "react-router-dom";
 import "../../app-style/main.css"
-import {Info} from "./Info"
-import {Register} from "./Reg"
-import {Help} from "./Help";
-import {Home} from "./Home";
+import {Info} from "../pages/Info"
+import {Register} from "../pages/Reg"
+import {Help} from "../pages/Help";
+import {Home} from "../pages/Home";
 
 export default function Navbar() {
     return (
