@@ -7,11 +7,20 @@
     border:0;
     font-family: 'Montserrat';
 }
+$DarkBG:rgba(37, 37, 37, 0.877);
 $orng: rgb(214, 136, 34);
 $preWhite: rgb(235, 235, 235);
+body{
+    background-color:$preWhite;
+    color: #fff;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
 .container{
     max-width: 1400px;
     margin: 0 auto;
+    padding: 0 10px;
     &._head {
         width: 100%;
         display: flex;
@@ -19,7 +28,10 @@ $preWhite: rgb(235, 235, 235);
         align-items: center;
     }
 }
-._content{margin-top: 100px;}
+._content{
+    width: 100%;
+    padding-top: 100px;
+}
 .header{
     width: 100%;
     position: fixed;
@@ -34,7 +46,7 @@ $preWhite: rgb(235, 235, 235);
         font-weight: bold;
         letter-spacing: 3px;
         text-decoration: none;
-        margin-left: 30px;
+        margin-left: 20px;
         text-shadow: $orng 4px -1px 6px ;
     }
     &-logo_note{
@@ -62,11 +74,10 @@ $preWhite: rgb(235, 235, 235);
             }
         }
     }
-
     .registr a{
         display: inline-block;
         border-radius: 15px;
-        margin-right: 30px;
+        margin-right: 20px;
         transition: .3s;
         border: solid 1px $orng;
         padding: 8px 10px;

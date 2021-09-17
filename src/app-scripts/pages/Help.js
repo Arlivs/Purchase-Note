@@ -1,14 +1,13 @@
-import "../../app-style/info.css"
-
+// import "../../app-style/help.css"
 export const Help = () => (<>
-    <section className="info _content">
-        <div className="container">
-            <div className="info-header">
-                <p className="info-title">
-                    Here you can get a help
-                </p>
-            </div>
+<section className="help _content">
+    <div className="container">
+        <div className="help-header">
+            <p className="help-title">
+                Here you can get a help
+            </p>
         </div>
-    </section>
-    </>
+    </div>
+</section>
+</>
 )

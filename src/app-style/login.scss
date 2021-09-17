@@ -1,12 +1,5 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Montserrat", sans-serif;
-    border: 0;
-}
 $orng: rgb(214, 136, 34);
-$preWhite: rgb(235, 235, 235);
+$mainW: rgb(235, 235, 235);
 *:focus{outline: 0;}
 .wrapper{
     width: 100%;
@@ -20,14 +13,6 @@ $preWhite: rgb(235, 235, 235);
     margin-top: -100px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-}
-body{
-    background-color:$preWhite;
-    color: #fff;
-    display: flex;
-    height: 100vh;
-    overflow: hidden;
     justify-content: center;
 }
 .data-box{
@@ -146,7 +131,7 @@ body{
         left: 10%;
         top: 70%;
         font-size: 11px;
-        color: $preWhite;
+        color: $mainW;
         font-weight: bold;
         position: absolute;
     }
