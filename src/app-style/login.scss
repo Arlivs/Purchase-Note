@@ -1,6 +1,6 @@
 $orng: rgb(214, 136, 34);
 $mainW: rgb(235, 235, 235);
-*:focus{outline: 0;}
+*:focus{ outline: 0 }
 .wrapper{
     width: 100%;
     display: flex;
@@ -38,7 +38,6 @@ $mainW: rgb(235, 235, 235);
     &__data {
         position: relative;
         text-align: center;
-        
     }
     &__title {
         font-weight: bold;
@@ -48,9 +47,7 @@ $mainW: rgb(235, 235, 235);
     }
 }
 .login{
-    &-label{
-        margin-right: 42px;
-    }
+    &-label{ margin-right: 42px }
     &ed {
         text-decoration: none;
         position: relative;
@@ -107,9 +104,7 @@ $mainW: rgb(235, 235, 235);
     border-radius: 15px;
     transition: .3s;
     border: solid 1px $orng;
-    &:hover{
-        background-color: $orng;
-    }
+    &:hover{ background-color: $orng }
 }
 .figure{
     position: absolute;

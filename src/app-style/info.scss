@@ -1,29 +1,17 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Montserrat", sans-serif;
-    border: 0;
-}
-$orng: rgb(214, 136, 34);
-$preWhite: rgb(235, 235, 235);
 .info{
-    &-body{
-        padding-top: 150px;
-    }
+    &-body{padding-top: 150px;}
     &-header{
         max-width: 800px;
         text-align: center;
         padding: 20px 0;
-        background-color: $orng;
+        background-color:rgb(214, 136, 34);
         margin: 0 auto;
         border-radius: 15px;
     }
     &-title{
         font-size: 30px;
-        color: $preWhite;
+        color:rgb(235, 235, 235);;
         max-width: 80%;
         margin: 0 auto;
     }
-
 }

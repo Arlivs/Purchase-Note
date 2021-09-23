@@ -14,7 +14,6 @@
 }
 
 .home__contacts {
-  background: #f1f1f1;
   min-height: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43,6 +42,7 @@
   display: flex;
   -webkit-box-align: start;
       -ms-flex-align: start;
+          align-items: start;
 }
 .home__contacts-img {
   max-width: 32px;

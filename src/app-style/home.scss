@@ -1,7 +1,6 @@
-$DarkBG:rgb(46, 46, 46);
 .home__banner{
     min-height: 100vh;
-    background-color: $DarkBG;
+    background-color:rgb(46, 46, 46);;
     &-title{
         font-size: 50px;
         text-align: center;
@@ -11,7 +10,6 @@ $DarkBG:rgb(46, 46, 46);
     }
 }
 .home__contacts{
-    background:rgb(241, 241, 241);
     min-height: 300px;
     display: flex;
     color:black;
@@ -50,9 +48,7 @@ $DarkBG:rgb(46, 46, 46);
 }
 @media (max-width:768px) {
     .home__contacts{
-        &-item a{
-            font-size: 20px;
-        }
+        &-item a{ font-size: 20px }
         &-img{
             max-width: 24px;
             max-height: 24px;
@@ -62,16 +58,12 @@ $DarkBG:rgb(46, 46, 46);
             font-size: 18px;
         }
     }
-    ._home{
-        min-width: 80%;
-    }
+    ._home{ min-width: 80% }
 }
 @media (max-width:425px) {
     .home__contacts{
         min-height: 250px;
-        &-item a{
-            font-size: 16px;
-        }
+        &-item a{ font-size: 16px }
         &-img{
             max-width:18px;
             max-height: 18px;
@@ -81,7 +73,5 @@ $DarkBG:rgb(46, 46, 46);
             font-size: 16px;
         }
     }
-    ._home{
-        min-width:95%;
-    }
+    ._home{ min-width:95% }
 }
